@@ -36,7 +36,7 @@ $ cd alerts_frontend
 Running the react server should automatically open up a browser. <br>
 Login with: <br>
 - email: user1@example.com <br>
-- password: 123456 
+- password: password 
 
 You can create a new user by calling the rails API auth endpoint and providing the following credentials: <br>
 first_name, last_name, username, password, password_confirmation, email
@@ -49,8 +49,8 @@ $ curl --location 'http://localhost:3000/auth/' \
 --form 'first_name="User1"' \
 --form 'last_name="Example"' \
 --form 'username="User1"' \
---form 'password="123456"' \
---form 'password_confirmation="123456"' \
+--form 'password="password"' \
+--form 'password_confirmation="password"' \
 --form 'email="user1@example.com"'
 ```
 

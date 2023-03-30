@@ -17,7 +17,7 @@ export default function NewAlert() {
       const headers = new Headers();
       headers.append("Content-Type", "application/json");
       headers.append("Authorization", token.token);
-      const response = await fetch("http://localhost:3000/v1/alerts", {
+      const response = await fetch("http://127.0.0.1:3000/v1/alerts", {
         method: "POST",
         body: JSON.stringify(formValues),
         headers,
